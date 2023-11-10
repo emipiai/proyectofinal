@@ -1,0 +1,286 @@
+/*PALETA*/
+h{
+    color: #E63946;/*SECUNDARIO*/
+    color: #F1FAEE;
+    color: #A8DADC;
+    color: #457B9D; /*PRIMARIO*/
+    color: #1D3557;/*PRIMARIO OSCURO*/
+}
+
+/* estilos comunes */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* estilos headerindex */
+.headerindex {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .headerindex {
+        display: block;
+    }
+}
+
+/* estilos de header */
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url(../img/nbaheader2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(red, orange);
+    color: azure;
+    font-size: 1.1rem;
+}
+
+@media (max-width:800px) {
+    header {
+        background-position: center;
+    }
+}
+
+
+/* estilos navbar bootstrap */
+.navbar {
+    background-color: #e18547 !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-nav a:hover {
+    background-color: #1D3557;
+    color: #F1FAEE;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* estilos carrusel */
+
+#carouselExample img {
+    width: 100vw;
+    height: 60vh;
+}
+
+@media (max-width: 991px) {
+    #carouselExample {
+        display: none !important;
+    }
+}
+
+/* estilos navbar formulario */
+.formnav {
+    display: flex;
+    justify-content: center;
+    background-color: #e18547;
+    position: sticky;
+    top: 0;
+    border-style: inset outset;
+    border-width: 10px;
+    border-color: #457B9D;
+}
+
+.formnav a {
+    color: #F1FAEE;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.formnav a:hover {
+    background-color: #1D3557;
+}
+
+@media (max-width:991px) {
+    .formnav {
+        flex-direction: column;
+        position: unset;
+    }
+
+    .formnav a {
+        text-align: center;
+    }
+}
+
+/* estilo parte principal */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex-basis: 25%;
+    padding: 20px;
+    background-color: #F1FAEE;
+    text-align: center;
+}
+
+main {
+    flex-basis: 75%;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: #A8DADC;
+}
+
+/* estilo cartas */
+
+.card {
+    width: 100%;
+    margin-bottom: 50px;
+    border: #1D3557 solid 3px;
+    background-color: #F1FAEE;
+}
+
+.card-body a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    background-color: #457B9D !important;
+}
+
+.card-body a:hover {
+    background-color: #E63946 !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+
+}
+
+/* estilo paginacion */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    .pagination {
+        justify-content: center;
+    }
+}
+
+.seemore {
+    display: block;
+    background-color: #457B9D;
+    color: #F1FAEE;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.seemore:hover {
+    background-color: #E63946;
+}
+
+@media (max-width:991px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.07);
+}
+
+.ca {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px dotted;
+    background-image: linear-gradient(orange, red);
+}
+
+.asidetitle {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .image img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* estilo footer */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: #F1FAEE;
+}
+
+/* estilo formulario */
+
+form {
+    padding: 40px;
+    background-color: #A8DADC;
+    border: 5px outset #e18547;
+}
+
+label {
+    background-color: #e18547;
+    color: #F1FAEE;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 5px double #E63946;
+    text-align: center;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+@media (max-width:600px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+}
